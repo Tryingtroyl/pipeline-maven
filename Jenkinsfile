@@ -8,15 +8,6 @@ pipeline {
 
     stages {
 
-
-        stage('Source') {
-            steps {
-                sh '''
-                echo "The source stage is completed when Maven pulls from the repo."
-                '''
-            }
-        }
-
         stage('Build') {
             steps {
                 sh '''
